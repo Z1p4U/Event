@@ -23,14 +23,16 @@ class RowsSeeder extends Seeder
                 for ($i = 1; $i <= 8; $i++) {
                     $data[] = [
                         'name' => $name,
-                        'seat' => $name . ' ' . $i
+                        'seat' => $name . ' ' . $i,
+                        'status' => false
                     ];
                 }
             } else {
                 for ($i = 1; $i <= 14; $i++) {
                     $data[] = [
                         'name' => $name,
-                        'seat' => $name . $i
+                        'seat' => $name . $i,
+                        'status' => false
                     ];
                 }
             }
